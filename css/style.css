@@ -1,0 +1,211 @@
+/* Start variables */
+:root{
+    --main-color:#19c8fa;
+    --transparent-color:rgb(15 116 143 / 70%);
+    --section-padding:100px;
+}
+/* end variables */
+
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Open sans", sans-serif;
+    background-color: #e0f1e7;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Smalll */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* MEduim */
+
+@media(min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    padding: 20px 0;
+   }
+
+/* End Global Rules */
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;  
+    border-radius: 10px;
+ 
+}
+@media (max-width: 768px){
+
+    .container{
+        width:350px !important;
+       
+    }
+}
+@media(max-width: 991px){
+    body{
+        padding: 100px;
+    }
+    .container{
+        width: 700px;
+        height: 800px;
+        margin: 0 auto;
+    }
+}
+@media(min-width: 991px){
+    .container{
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+
+.container h2{
+    color: #252525;
+    padding:10px 20px;
+
+}
+form{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+}
+form div{
+    margin-bottom:  10px;
+}
+
+form label:not(button label,.check label){
+    display: block;
+}
+form label{
+    margin: 5px 20px;
+    width: fit-content; 
+}
+form input:not(.query input[type='radio'],input[type='checkbox']){
+    margin: 0 20px;
+    width: 250px;
+    height: 40px;
+}
+form .email input[type='email']{
+    width:540px !important;
+}
+@media (max-width: 768px){
+    form{
+        display: block  ;
+    }
+    form .name input,
+    form .lastname input{
+        width: 300px !important ;
+    }
+    form .email input[type='email'] {
+        width: 300px !important;
+    }
+    
+}
+form .query{
+    width: 540px;
+    margin: 5px 20px;
+   
+}
+form .query label:first-child{
+   margin:20px 0;
+}
+form .query button{
+    width: 200px;
+    margin-right: 20px;
+}
+form .query button{
+  width: 200px;
+  height: 40px;
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+@media (max-width: 768px){
+
+    form .query{
+        width: 100%;
+        
+    }
+    form .query label{
+        margin:5px 20px !important;
+    }
+    form .query button{
+        display: block;
+        margin-bottom: 20px;
+        width: 300px;
+        padding: 0;
+      
+    }
+    form .query button label{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+}
+
+form .message textarea{
+    width: 540px;
+    height: 200px;
+    margin:  0 20px;
+    padding: 10px;
+}
+form .check{
+    margin:  20px;
+}
+form .check label{
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+form input[type='submit']{
+    background-color: var(--main-color);
+    color: #e0f1e7;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 540px !important;
+}
+@media (max-width: 768px){
+    .message{
+        width: 100%;
+    }
+    form .message textarea{
+        width: 300px;
+    }
+    form input[type='submit']{
+        width: 300px !important;
+    }
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <!-- all min css file -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!-- Normailze css file -->
+      <link rel="stylesheet" href="css/normalize.css">
+      <!-- style css fiel -->
+       <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact us</h2>
+       
+        <form action="">
+           <div class="name">
+            <label for="name">FirstName</label>
+            <input type="text" placeholder="Your Name">
+           </div>
+    
+           <div class="lastname">
+            <label for="last-name">Lats Name</label>
+            <input type="text" placeholder="Your last name">
+           </div>
+    
+            <div class="email">
+                <label for="email">Email Address</label>
+            <input type="email" placeholder="Your Email">
+            </div>
+       
+           <div class="query">
+            <label for="Query-type">Query Type</label>
+            <button>
+             <input type="radio" name="Query-type" id="General-Enquiry">
+             <label for="General-Enquiry">General Enquiry</label>
+            </button>
+             <button>
+             <input type="radio" name="Query-type" id="Soppurt-request">
+             <label for="Soppurt-request">Soppurt request</label>    
+             </button>
+           </div>
+          <div class="message">
+            <label for="Message">Message</label>
+            <textarea placeholder="Write your message"></textarea>
+          </div>
+            <div class="check">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox"> I consent to being contacted by the team.</label>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+
+    </div>
+</body>
+</html>
